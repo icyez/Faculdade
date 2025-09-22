@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Nunito:wght@700&display=swap");
+
+body {
+  background: linear-gradient(135deg, #ffe4fa 0%, #ffe0fc 50%, #e0c3fc 100%);
+  color: #7d5a99;
+  margin: 0;
+  font-family: "Quicksand", "Nunito", cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1,
+h2 {
+  color: #ff69b4;
+  text-align: center;
+  font-family: "Nunito", cursive, sans-serif;
+  text-shadow: 1px 2px 8px #fff0f6;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  text-align: justify;
+}
+.destaque {
+  background: linear-gradient(90deg, #ffb6e6 0%, #ffe0fc 100%);
+  color: #fff8fb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #ffb6e655;
+}
+#img-logo {
+  width: 50px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#img-logo:hover {
+  transform: rotate(360deg);
+}
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ff69b4;
+  font-weight: bold;
+  border: 2px solid #ffb6e6;
+  padding: 5px 16px;
+  background: linear-gradient(90deg, #fff0f6 60%, #ffe4fa 100%);
+  border-radius: 16px;
+  box-shadow: 0 1px 6px #ffe0fc55;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+}
+nav ul li a:hover {
+  background: linear-gradient(90deg, #ffe0fc 0%, #ffb6e6 100%);
+  color: #fff;
+}
+header {
+  background: linear-gradient(90deg, #fff0f6 0%, #ffe4fa 100%);
+  color: #7d5a99;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 2px 12px #ffe0fc55;
+  padding: 10px 10px;
+}
+main {
+  margin: auto 20%;
+  flex-grow: 1;
+}
+footer {
+  padding: 0px 5px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e7e7e7;
+}

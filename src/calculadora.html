@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calcula-Gatos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/css/vampiro.css" />
+
+    <script>
+      function somar() {
+        const n1 = document.getElementById("n1").value;
+        const n2 = document.getElementById("n2").value;
+
+        const soma = Number(n1) + Number(n2);
+
+        document.getElementById("resultado").innerText =
+          "Você tem " + soma + " gatinhos!";
+      }
+      function subtrair() {
+        const n1 = document.getElementById("n1").value;
+        const n2 = document.getElementById("n2").value;
+
+        const subtracao = Number(n1) - Number(n2);
+
+        document.getElementById("resultado").innerText =
+          "Você tem " + subtracao + " gatinhos!";
+      }
+      function multiplicar() {
+        const n1 = document.getElementById("n1").value;
+        const n2 = document.getElementById("n2").value;
+
+        const multiplicacao = Number(n1) * Number(n2);
+
+        document.getElementById("resultado").innerText =
+          "Você tem " + multiplicacao + " gatinhos!";
+      }
+
+      function dividir() {
+        const n1 = document.getElementById("n1").value;
+        const n2 = document.getElementById("n2").value;
+
+        const divisao = Number(n1) / Number(n2);
+
+        document.getElementById("resultado").innerText =
+          "Você tem " + divisao + " gatinhos!";
+      }
+    </script>
+  </head>
+
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Calculadora de Gatinhos</legend>
+        Gatos : <input type="text" id="n1" /><br />
+        Gatinhos : <input type="text" id="n2" /><br />
+        <div class="calculadora-grid">
+          <button type="button" onclick="somar()">Somar</button>
+          <button type="button" onclick="subtrair()">Subtrair</button>
+          <button type="button" onclick="multiplicar()">Multiplicar</button>
+          <button type="button" onclick="dividir()">Dividir</button>
+        </div>
+        <h1 id="resultado">Quantos gatinhos você tem?</h1>
+      </fieldset>
+    </form>
+
+    <a href="#" class="btn-voltar" onclick="history.back(); return false;">
+      Voltar
+    </a>
+  </body>
+</html>
