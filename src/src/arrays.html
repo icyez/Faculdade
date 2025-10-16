@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arrays</title>
+
+		<script>
+			const carros = ["Gol", "Fusca", "Virtus", "Ka"];
+
+			carros.push("Fiesta");
+			carros.unshift("Palio");
+
+			/*
+            splice serve para:
+            Excluir itens a partir de um índice
+            ex: carros.plice(2, 1) -> exclui o item do índice 2
+            Adicionar itens a partir de um índice
+            ex: carros.splice(3, 0, "Uno") -> adiciona o item "Uno" no índice 3
+            Alterar itens a partir de um índice
+            ex: carros.splice(1, 1, "Uno") -> adiciona o item "Uno" no índice 1, removendo o item que estava lá
+            */
+
+			carros.splice(1, 0, "Uno");
+			console.table(carros);
+
+			carros.sort();
+			console.table(carros);
+		</script>
+	</head>
+	<body></body>
+</html>

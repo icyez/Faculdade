@@ -1,0 +1,89 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: #fce4ec;
+	font-family: 'Nunito', sans-serif;
+	gap: 25px;
+}
+
+#board {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 238px;
+	height: 238px;
+
+	background-color: #f8bbd0;
+	border-radius: 16px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+	width: 70px;
+	height: 70px;
+	background-color: #fff;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.5rem;
+	color: #880e4f;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cell:hover {
+	background-color: #fce4ec;
+}
+
+#controle {
+	width: 250px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 25px;
+	background-color: white;
+	border-radius: 16px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	color: #555;
+}
+
+#controle input {
+	margin: 5px;
+	padding: 10px;
+	width: 60px;
+	text-align: center;
+	border: 2px solid #f8bbd0;
+	border-radius: 8px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+}
+
+#controle button {
+	padding: 12px 25px;
+	margin-top: 15px;
+	cursor: pointer;
+	border: none;
+	background-color: #ec407a;
+	color: white;
+	border-radius: 8px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	transition: background-color 0.3s;
+}
+
+#controle button:hover {
+	background-color: #d81b60;
+}
+
+#aviso {
+	margin-top: 20px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #ad1457;
+}
